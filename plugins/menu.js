@@ -1,5 +1,5 @@
 const fs = require('fs');
-const config = require('../config');
+const {readEnv} = require('./lib/database');
 const { cmd, commands } = require('../command');
 const { runtime } = require('../lib/functions');
 const axios = require('axios');
