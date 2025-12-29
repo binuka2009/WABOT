@@ -18,7 +18,7 @@ async (conn, mek, m, { from, q, reply, isOwner }) => {
     }
 
     // Find the position of the first colon or comma
-    const colonIndex = q.indexOf(':');
+    const colonIndex = q.indexOf(' ');
     const commaIndex = q.indexOf(',');
 
     // Ensure we have a valid delimiter index
