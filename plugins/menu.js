@@ -12,6 +12,7 @@ cmd({
     filename: __filename
 }, async (conn, mek, m, { from, reply }) => {
     try {
+        const config = await readEnv();
         // Count total commands
         const totalCommands = Object.keys(commands).length;
 
